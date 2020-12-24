@@ -15,7 +15,7 @@ public class Taxi {
             for (int j = 1; j <= i; j++) {
                 if ((int) Math.random() % 5 == 0) {
                     System.out.println("Ahhhhh!");
-                    int flag = (int) (Math.random() * 100000) % 15;
+                    int flag = (int) ((Math.random() * 100000) % 15) + 1;
                     System.out.println("You drive in low speed for " + flag + " km");
                     if (flag <= 5)
                         fee = fee + flag * 0.4;
